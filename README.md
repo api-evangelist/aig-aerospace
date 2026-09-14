@@ -64,5 +64,23 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-AIG Aerospace is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+AIG Aerospace is the aviation and aerospace specialty insurance business of American International
+Group, Inc. (AIG) — hull and liability cover for airlines, general aviation owners and operators,
+aircraft and component manufacturers, MRO and distribution businesses, airports, ground handlers and
+service providers, and unmanned aircraft systems, with dedicated aerospace adjusters and aviation
+attorneys on a 24/7 claims hotline.
+
+**AIG Aerospace publishes no API.** There is no developer portal, no OpenAPI or other
+machine-readable contract, no GraphQL endpoint, no MCP server, no agent card, no SDK, no CLI and no
+self-service signup. Its public surface is marketing pages on aig.com plus PDF application forms;
+quoting and binding run through appointed brokers and claims run through authenticated AIG portals.
+Every `/.well-known/` discovery path probed on every AIG host missed — see
+`well-known/aig-aerospace-well-known.yml` for the recorded statuses.
+
+AIG's one known API gateway, `commercial.api.aig.com`, serves the parent company's broker and
+producer applications, rejects anonymous calls at an Okta-backed proxy, and is profiled on the
+parent record at [api-evangelist/aig](https://github.com/api-evangelist/aig) rather than here. The
+travel-insurance APIs once catalogued at `developers.aig.com` also belong to the parent, and that
+host no longer accepts TCP connections.
+
+- https://www.aig.com/home/risk-solutions/business/specialty-risks/aviation

@@ -1,0 +1,96 @@
+generated: '2026-09-14'
+method: probed
+source: >-
+  Live anonymous GET of the named RFC 8615 discovery paths on every host this record knows —
+  aig.com and www.aig.com (the AIG Aerospace marketing surface), www.aig.co.uk (the UK aviation
+  line), www-249.aig.com (the AIG claims portal used for aerospace claims) and www.myaig.com (the
+  broker portal). AIG Aerospace declares no API baseURL and publishes no OpenAPI, so there are no
+  additional servers[] hosts to probe.
+note: >-
+  Every probed path missed. www.aig.com and www.aig.co.uk answer 403 from the Imperva edge for any
+  /.well-known/* path, aig.com 301s to www, www-249.aig.com returns a plain 404, and www.myaig.com
+  returned 503 for the whole path set at probe time. No host served a security.txt, OpenID Connect
+  or OAuth authorization-server document, an api-catalog, an ai-plugin manifest or an A2A agent
+  card. No WellKnown or SecurityTxt pointer is wired in apis.yml, because nothing was served — this
+  file records a measured absence, not a published surface.
+hosts:
+- host: www.aig.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+  - path: /.well-known/openid-configuration
+    status: 403
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+  - path: /.well-known/api-catalog
+    status: 403
+  - path: /.well-known/ai-plugin.json
+    status: 403
+  - path: /.well-known/agent-card.json
+    status: 403
+  - path: /.well-known/agent.json
+    status: 403
+- host: aig.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 301
+  - path: /.well-known/openid-configuration
+    status: 301
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+  - path: /.well-known/api-catalog
+    status: 301
+  - path: /.well-known/ai-plugin.json
+    status: 301
+  - path: /.well-known/agent-card.json
+    status: 301
+  - path: /.well-known/agent.json
+    status: 301
+- host: www.aig.co.uk
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+  - path: /.well-known/openid-configuration
+    status: 403
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+  - path: /.well-known/api-catalog
+    status: 403
+  - path: /.well-known/ai-plugin.json
+    status: 403
+  - path: /.well-known/agent-card.json
+    status: 403
+  - path: /.well-known/agent.json
+    status: 403
+- host: www-249.aig.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: www.myaig.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 503
+  - path: /.well-known/openid-configuration
+    status: 503
+  - path: /.well-known/oauth-authorization-server
+    status: 503
+  - path: /.well-known/api-catalog
+    status: 503
+  - path: /.well-known/ai-plugin.json
+    status: 503
+  - path: /.well-known/agent-card.json
+    status: 503
+  - path: /.well-known/agent.json
+    status: 503

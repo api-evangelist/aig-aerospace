@@ -1,23 +1,164 @@
 aid: aig-aerospace
 name: AIG Aerospace
-description: 'AIG Aerospace is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
 url: https://raw.githubusercontent.com/api-evangelist/aig-aerospace/refs/heads/main/apis.yml
-x-type: company
-x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+description: >-
+  AIG Aerospace is the aviation and aerospace specialty insurance business of American International
+  Group, Inc. (AIG), underwriting hull and liability cover for airlines, general aviation owners and
+  operators, aircraft and component manufacturers, MRO and distribution businesses, airports, ground
+  handlers and service providers, and unmanned aircraft systems, backed by dedicated aerospace claims
+  adjusters and aviation attorneys on a 24/7 hotline. It is a line of business rather than a software
+  company: it publishes no developer portal, no OpenAPI or other machine-readable contract, no SDK,
+  no webhooks and no self-service signup. Its public surface is marketing pages on aig.com plus PDF
+  application forms; quoting and binding run through appointed brokers and claims through
+  authenticated AIG portals. AIG's one API gateway, commercial.api.aig.com, is contract-only, serves
+  the parent's broker applications rather than aerospace, and is profiled at api-evangelist/aig.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/aig.png
 specificationVersion: '0.20'
 created: '2026-09-14'
 modified: '2026-09-14'
+position: Consuming
+access: 3rd-Party
+x-type: company
+x-source: harvest:secondary-market
+x-parent-company: aig
 tags:
-- Company
-apis: []
+- Insurance
+- Aviation
+- Aerospace
+- Specialty Insurance
+- Property Casualty
+- Claims
+- Unmanned Aircraft
+- Enterprise
+tags_raw:
+- Insurance
+- Aviation
+- Aerospace
+- Specialty Insurance
+- Property Casualty
+- Claims
+- Unmanned Aircraft
+- Enterprise
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis: []
 common:
-- type: Website
-  url: https://www.nasdaqprivatemarket.com/
+- name: AIG Aviation & Aerospace Insurance
+  type: Website
+  url: https://www.aig.com/home/risk-solutions/business/specialty-risks/aviation
+  description: >-
+    The AIG Aerospace landing page on aig.com — product lines, limits, claims promise and the PDF
+    application forms. Replaces the placeholder nasdaqprivatemarket.com URL carried by the harvest
+    stub, which had nothing to do with this company.
+- name: Airline Insurance
+  type: Documentation
+  url: https://www.aig.com/home/risk-solutions/business/specialty-risks/aerospace-and-aviation/airline
+  description: Aviation hull and liability coverage for scheduled charter through international wide-body operators.
+- name: Unmanned Aircraft Systems Insurance
+  type: Documentation
+  url: https://www.aig.com/home/risk-solutions/business/specialty-risks/aerospace-and-aviation/unmanned-aircraft-systems
+  description: Physical damage and third-party liability coverage written specifically for unmanned aircraft exposures.
+- name: AIG Aviation (UK)
+  type: Documentation
+  url: https://www.aig.co.uk/home/risk-solutions/business/aviation
+  description: The UK arm of the same aerospace line, on AIG's UK domain.
+- name: Report an Aerospace Claim
+  type: Support
+  url: https://www.aig.com/home/claims/report-a-claim/specialty-aerospace
+  description: >-
+    Aerospace claims intake — 24/7 hotline (866-463-0408 / 404-249-1800) plus the
+    AerospaceClaimsPhoenix@aig.com and AerospaceClaimsHomeOffice@aig.com intake mailboxes.
+- name: AIG Claims Portal
+  type: Portal
+  url: https://www-249.aig.com/
+  description: >-
+    Authenticated AIG claims portal used to report aerospace, commercial auto, general liability,
+    property and workers' compensation claims. Login required; no public contract is published for it.
+- name: myAIG Broker Portal
+  type: Portal
+  url: https://www.myaig.com
+  description: >-
+    AIG's North America broker portal (resolves to www-1p.aig.com). Aerospace submissions and policy
+    servicing run through appointed brokers here rather than through any public API.
+- name: AIG Contact
+  type: Support
+  url: https://www.aig.com/home/contact
+  description: AIG contact and support routing by product line and region.
+- name: AIG Aerospace Highlight Sheet
+  type: Documentation
+  url: https://www.aig.com/content/dam/aig/america-canada/us/documents/business/highlight-sheet/aig-aerospace-highlight-sheet.pdf
+  description: PDF capability sheet for the aerospace line — limits, appetite, claims promise.
+- name: AIG Newsroom
+  type: Blog
+  url: https://www.aig.com/home/newsroom/stories
+  description: AIG corporate stories and newsroom; the aerospace line has no separate blog.
+- name: AIG on LinkedIn
+  type: LinkedIn
+  url: https://www.linkedin.com/company/aig
+- name: AIG Vulnerability Disclosure Program
+  type: Security
+  url: https://www.aig.com/home/about/cyber-and-information-security/vulnerability-disclosure
+  description: >-
+    AIG's enterprise vulnerability disclosure program, which covers the aerospace line's web
+    properties; reports are submitted through https://hackerone.com/aig.
+- name: AIG Privacy Policy
+  type: PrivacyPolicy
+  url: https://www.aig.com/privacy-policy
+- name: AIG Terms of Use
+  type: TermsOfService
+  url: https://www.aig.com/terms-of-use
+- type: DomainSecurity
+  url: security/aig-aerospace-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/aig-aerospace-vulnerability-disclosure.yml
+- type: LLMsTxt
+  url: llms/aig-aerospace-llms.txt
+- type: Plans
+  url: plans/aig-aerospace-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/aig-aerospace-rate-limits.yml
+- type: Packages
+  url: packages/aig-aerospace-packages.yml
+- type: Features
+  data:
+  - name: Airline Hull & Liability
+    description: Up to 15% of a $2.5B limit of liability on airline risks in a leading or following position, for operators from small scheduled charter to international wide-body.
+  - name: General Aviation
+    description: Hull and liability for owners, operators and aircraft management companies, up to $100M agreed hull value and $650M liability limits.
+  - name: Aviation Product Liability
+    description: Aerospace product liability for manufacturers, distributors, and maintenance, repair and overhaul operations.
+  - name: Airports, Ground Handlers & Service Providers
+    description: Liability cover for airport operators, fixed-base operators, ground handlers and aviation service providers.
+  - name: Unmanned Aircraft Systems
+    description: Physical damage and third-party liability written for drone and UAS exposures, with a dedicated application form.
+  - name: Aerospace Claims
+    description: Dedicated aerospace adjusters and aviation attorneys on a 24/7 hotline, with the AIG Claims Promise advancing 50% of AIG's share within 7 days of confirmed coverage and ownership.
+x-enrichment:
+  date: '2026-09-14'
+  status: minimal
+  artifacts_added: 7
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    AIG Aerospace is a specialty-insurance line inside American International Group, not a software
+    business — its whole public surface is the aviation pages on aig.com plus ten PDF application
+    forms, quoting and binding happen through appointed brokers, and no AIG host served an OpenAPI,
+    a /.well-known/ document or any developer portal when probed (AIG's own former portal host
+    www.developers.aig.com refuses TCP connections on 443).
+  evidence:
+  - url: https://www.aig.com/home/risk-solutions/business/specialty-risks/aviation
+    status: 200
+  - url: https://www.aig.com/openapi.json
+    status: 404
+  - url: https://www.developers.aig.com/apis
+    status: 0
+  - url: https://www.aig.com/.well-known/api-catalog
+    status: 403
+  - url: https://developer.aig.com/
+    status: 404
+  checked: '2026-09-14'

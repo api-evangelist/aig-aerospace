@@ -1,0 +1,23 @@
+generated: '2026-09-14'
+method: searched
+source: https://www.aig.com/home/risk-solutions/business/specialty-risks/aviation
+limit_count: 0
+rate_limits: []
+headers: []
+note: >-
+  No rate limits are published, and there is no public API surface on which to observe any. AIG
+  Aerospace exposes no baseURL, no OpenAPI and no developer portal; the aerospace pages on aig.com
+  are marketing and PDF forms. The only AIG API host API Evangelist has found,
+  commercial.api.aig.com, belongs to the parent company's broker and producer applications, rejects
+  every anonymous call at an Okta-backed proxy, and is profiled on the parent record
+  (api-evangelist/aig) rather than here. An honest zero, measured — not an unchecked field.
+evidence:
+- url: https://www.aig.com/home/risk-solutions/business/specialty-risks/aviation
+  status: 200
+  note: No developer or rate-limit documentation anywhere on the aerospace surface.
+- url: https://www.developers.aig.com/apis
+  status: 0
+  note: >-
+    AIG's former developer portal host is still indexed by search engines but refuses TCP
+    connections on 443 — the same result the parent record recorded in August 2026. Its cached
+    catalog covered travel-insurance quoting APIs, not aerospace.

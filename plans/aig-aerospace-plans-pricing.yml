@@ -1,0 +1,22 @@
+generated: '2026-09-14'
+method: searched
+source: https://www.aig.com/home/risk-solutions/business/specialty-risks/aviation
+plan_count: 0
+plans: []
+pricing_model: broker-placed
+note: >-
+  AIG Aerospace publishes no plans, tiers, rate card or price list of any kind. Aerospace insurance
+  is underwritten per risk: coverage is quoted and bound through appointed brokers and producers
+  against submitted application forms (the aig.com aerospace page links ten PDF applications —
+  aircraft, aircraft products, non-owned aircraft, aviation general liability, airport liability,
+  pilot qualification, personal and business, and drone), with limits negotiated per account. The
+  only published numbers are capacity ceilings, not prices: up to 15% of a $2.5B limit of liability
+  on airline risks, and up to $100M agreed hull value with $650M liability limits in general
+  aviation. There is no self-service signup, no online quote and no published pricing URL to probe.
+evidence:
+- url: https://www.aig.com/home/risk-solutions/business/specialty-risks/aviation
+  status: 200
+  note: Product and capacity page; no pricing section.
+- url: https://www.aig.com/content/dam/aig/america-canada/us/documents/business/highlight-sheet/aig-aerospace-highlight-sheet.pdf
+  status: 200
+  note: Capability sheet; limits and appetite only, no rates.

@@ -1,0 +1,34 @@
+generated: '2026-09-14'
+method: searched
+source: >-
+  npm registry search (registry.npmjs.org/-/v1/search?text=aig+aerospace), PyPI
+  (pypi.org/pypi/aig-aerospace/json -> 404), and the AIG Aerospace pages on aig.com, which link only
+  to PDF application forms and a claims hotline. No SDK, CLI, SourceCode or GitHub link exists in
+  apis.yml to derive candidates from.
+package_count: 0
+official_count: 0
+packages: []
+rejected:
+- name: aig-risk-profiler-mcp
+  registry: npm
+  version: 1.2.4
+  published: '2026-02-28'
+  reason: >-
+    Third-party MCP server that generates Management Liability Coverage risk reports from Chinese
+    annual-report PDFs, published by npm user lcpmarvel. Not AIG-authored and not aerospace.
+- name: '@ronork/aig-mcp'
+  registry: npm
+  version: 0.1.4
+  published: '2026-06-11'
+  reason: >-
+    Unrelated project — "AIG" here is aig.ronork.com, an app-icon generator. Name collision only.
+- name: aig-for-nodejs
+  registry: npm
+  version: 4.0.3
+  published: '2023-08-18'
+  reason: >-
+    "Genshin Artifact Image Generator for NodeJS". Name collision only.
+note: >-
+  AIG Aerospace publishes no client libraries in any public registry, and neither does its parent.
+  Nothing here is a gap in the search: the aerospace line has no API to wrap, so an SDK would have
+  nothing to call. No SDKs pointer is wired in apis.yml, because there are no SDKs to point at.
