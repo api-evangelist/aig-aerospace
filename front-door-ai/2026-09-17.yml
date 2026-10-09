@@ -1,0 +1,33 @@
+# Front Door AI Index — aig-aerospace — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: aig-aerospace
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.aig.com
+  final_host: www.aig.com
+  ownership: shared
+  owner: aig
+  shares_host_with:
+  - aig
+  - american-international
+  inherited_from: null
+  alias_of: null
+  verdict: scored
+  score: null
+  band: null
+  band_label: null
+  host_score: 2
+  density: null
+  words: 2171
+  tiers:
+    agentic: 0
+    core: 1
+    model: 1
+  ambiguous: 8
+  top_terms:
+    agent: 5
+    intelligence: 3
+    AI: 1
+    Anthropic: 1
