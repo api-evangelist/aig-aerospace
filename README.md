@@ -80,20 +80,20 @@ Each property below is a page on APIs.io carrying the machine-readable artifact 
 
 Authentication, trust centre, and vulnerability disclosure.
 
-- [Aig Aerospace Domain Security](https://apis.io/security/aig-aerospace/aig-aerospace-domain-security/)
-- [Aig Aerospace Vulnerability Disclosure](https://apis.io/security/aig-aerospace/aig-aerospace-vulnerability-disclosure/)
+- [AIG Aerospace Domain Security](https://apis.io/security/aig-aerospace/aig-aerospace-domain-security/)
+- [AIG Aerospace Vulnerability Disclosure](https://apis.io/security/aig-aerospace/aig-aerospace-vulnerability-disclosure/)
 
 #### Plans and pricing (1)
 
 Published plans, tiers and prices.
 
-- [Aig Aerospace Plans Pricing](https://apis.io/plans/aig-aerospace/aig-aerospace-plans-pricing/)
+- [AIG Aerospace Plans Pricing](https://apis.io/plans/aig-aerospace/aig-aerospace-plans-pricing/)
 
 #### Rate limits (1)
 
 Published request limits.
 
-- [Aig Aerospace Rate Limits](https://apis.io/rate-limits/aig-aerospace/aig-aerospace-rate-limits/)
+- [AIG Aerospace Rate Limits](https://apis.io/rate-limits/aig-aerospace/aig-aerospace-rate-limits/)
 
 ## Where to find this API
 
@@ -109,16 +109,16 @@ Links to the company's own pages. This repository publishes no copy of their spe
 
 ## API Evangelist rating
 
-**Kin Score 15.8** — emerging · rubric 0.24.0 · scored 2026-10-17
+**Kin Score 17.8** — emerging · rubric 0.28.1 · scored 2026-11-21
 
 | Facet | Score |
 |---|---|
 | Discoverability | 48.2 |
 | Contract quality | 0.0 |
 | Contract governance | 0.0 |
-| Operational transparency | 10.5 |
+| Operational transparency | 9.5 |
 | Developer ergonomics | 26.2 |
-| Access clarity | 21.1 |
+| Access clarity | 31.9 |
 
 **Agent readiness 2.5** — human-only
 
@@ -143,6 +143,12 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Protected Resource Metadata | — |
 | Dynamic Client Registration | — |
 | Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+| MCP Tool Quality | na |
+| Onboarding Descriptor | — |
+| Dns Aid Index | na |
+| Markdown Negotiation | na |
 
 **Regulatory alignment 17.5** — Insurance
 
